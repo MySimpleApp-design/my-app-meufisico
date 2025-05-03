@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking de Atividade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meu Físico</h1>
+  </header>
+
+  <div class="container">
+    <h2>Tracking de Atividade</h2>
+    
+    <button id="startButton" onclick="startTracking()">Iniciar Atividade</button>
+    <button id="stopButton" style="display:none;" onclick="stopTracking()">Parar Atividade</button>
+
+    <div id="location-info">
+      <p>Latitude: <span id="latitude">0.0</span></p>
+      <p>Longitude: <span id="longitude">0.0</span></p>
+      <p>Precisão: <span id="accuracy">0</span> metros</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
